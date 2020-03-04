@@ -3,7 +3,7 @@ class Car
 public String carName; 
 public String carColor; 
 public int wheels; 
-public int engines;
+public int enginee;
 public int breaks; 
 public void start()
 {
@@ -18,7 +18,7 @@ public class Cardemo
 {
 public static void main(String args[])
 {
-car c=new car();
+Car c=new Car();
 c.carName="benz";
 c.carColor="white";
 c.wheels=4;
@@ -26,6 +26,5 @@ c.enginee=1;
 c.breaks=4;
 c.start();
 c.move();
-c.stop();
 }
 }
