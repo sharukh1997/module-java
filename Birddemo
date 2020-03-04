@@ -1,0 +1,34 @@
+class Bird
+{
+//attrubutes or properties
+public String birdName;
+public String birdColor;
+public int legs;
+public int wings;
+private boolean canSing;
+
+//method definitions
+public void walk()
+{
+System.out.println("Bird "+birdName+" walks with "+legs+" legs.");
+}
+public void fly()
+{
+System.out.println("Bird "+birdName+" files with "+wings+" wings.");
+}
+}//end of Bird class
+public class Birddemo
+{
+public static void main(String args[])
+{
+//create object for bird class
+Bird p=new Bird();
+//set values to the attributes of bird object p
+p.birdName="Parrot";
+p.birdColor="Green";
+p.legs=2;
+p.wings=2;
+p.walk();
+p.fly();
+}
+} 
