@@ -1,0 +1,27 @@
+class Circle
+{
+ public double r;
+ public double pi;
+ public double area;
+ public double circum;
+public void area()
+{
+      area=pi*r*r;
+System.out.println("the area of circle" +area+ ".");
+} 
+public void circum()
+{
+   circum=2*pi*r;
+System.out.println("the circum of circle" +circum+ ".");
+}
+}
+public class Circledemo
+{
+public static void main(String args[])
+{
+Circle c= new Circle();
+c.pi=3.14;
+c.r=34;
+c.area();
+c.circum();
+}}
