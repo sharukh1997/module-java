@@ -1,5 +1,3 @@
-package basicelementsofjava_lms;
-
 public class Incometaxdemo {
 
        public static void main(String[] args) {
