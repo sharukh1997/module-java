@@ -6,7 +6,7 @@ public static void main(String args[])
   {
   int subjects[];
   String computer_languages[]={"c","c++","java"};
-  String trainerNames[]={"sivaram","sanjay","vidhyasagar"};
+  String trainerNames[]={"shabber","kesava","harish"};
   for(String trainerName : trainerNames)
   {
 	System.out.println(trainerName);
