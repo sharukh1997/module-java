@@ -1,0 +1,46 @@
+class Eventhread extends Thread
+{
+  Eventhread()
+  { 
+     setName("Even thread");
+  }
+ 
+   public void run()
+   {
+      System.out.println("Current thread:"+Thread.currentThread().getName());
+      for(int i=2;i<=20;i+=2)
+      {
+         System.out.print(i+"\t");
+      }
+    }
+  }
+ 
+class Oddthread implements Runnable
+{     
+   Oddthread()
+    {
+     
+     }
+
+    public void run()
+     {
+       for(int i=1;i<=20;i+=2)
+        {
+           System.out.print(i+"\t");
+         }
+      }
+   }
+
+public class Threaddemo
+{
+    public static void main(String args[])
+     {
+           Oddthread ot=new Oddthread();
+           Eventhread et=new Eventhread();
+            ot.run();
+            et.start();
+            
+     }
+
+}
+   
